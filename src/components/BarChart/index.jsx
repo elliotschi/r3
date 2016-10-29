@@ -71,7 +71,7 @@ class BarChart extends React.Component {
           x={xScale(d.month)}
           y={margins.top - margins.bottom}
           height={h}
-          width={xScale.rangeBand()}
+          width={0.35}
         /> 
     )
 
@@ -86,7 +86,7 @@ class BarChart extends React.Component {
           y={yScale(d.value)}
           className="shadow"
           height={h- yScale(d.value)}
-          width={xScale.rangeBand()}/>
+          width={0.35}/>
     )
 
     return (
