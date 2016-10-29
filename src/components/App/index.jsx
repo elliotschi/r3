@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './styles.css'
 // import BarChart from '../BarChart'
 import Visitors from '../Visitors'
+import DonutChart from '../DonutChart'
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
         <div className="App-header">
           {/*<BarChart />*/}
           <Visitors />
+          <DonutChart />
         </div>
       </div>
     );

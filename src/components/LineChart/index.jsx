@@ -81,7 +81,6 @@ class LineChart extends React.Component {
   }
 
   handleResize = () => {
-    console.log('resize event', window.innerWidth)
     this.setState({
       width: window.innerWidth
     })
