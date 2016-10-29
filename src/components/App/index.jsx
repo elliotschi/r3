@@ -4,6 +4,7 @@ import './styles.css'
 // import BarChart from '../BarChart'
 import Visitors from '../Visitors'
 import DonutChart from '../DonutChart'
+import ProgressChart from '../ProgressChart'
 
 class App extends Component {
   render() {
@@ -12,7 +13,10 @@ class App extends Component {
         <div className="App-header">
           {/*<BarChart />*/}
           <Visitors />
-          <DonutChart />
+          <div className="pad bottom-left-svg">
+            <DonutChart padAngle={0.03}/>
+          </div>
+          <ProgressChart />
         </div>
       </div>
     );
